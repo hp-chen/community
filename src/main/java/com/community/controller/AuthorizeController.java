@@ -61,6 +61,8 @@ public class AuthorizeController {
             //两个时间
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            //用户头像地址
+            user.setAvatarUrl(githubUser.getAvatarUrl());
             //将用户数据存入数据库
             userMapper.insert(user);
             //使用把token放入到cookie中
