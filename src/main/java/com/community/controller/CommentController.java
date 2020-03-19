@@ -26,7 +26,7 @@ public class CommentController {
     @RequestMapping(value = "/comment", method = RequestMethod.POST)
     public Object post(@RequestBody CommentDTO commentDTO,
                        HttpServletRequest request) {
-        User user = (User) request.getAttribute("user");
+        User user = (User) request.getSession().getAttribute("user");
         if (user == null) {
             return ResultDTO.errorOf(CustomizeErrorCode.NO_LOGIN);
         }
