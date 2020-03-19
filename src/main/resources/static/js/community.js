@@ -11,12 +11,19 @@ function post() {
             "type": 1
         }),
         success: function (response) {
-            if (response.code == 200 ) {
+            if (response.code == 200) {
                 $("#comment_section").hide();
             } else {
-                alert(response.measure());
+                if (response.code == 2003) {
+                    var isAccepted = confirm(response.message);
+                    if (isAccepted) {
+                        window.open("https://www.baidu.com")
+                        window.localStorage.setItem("closable", true);
+                    }
+                } else {
+                    alert(response.message);
+                }
             }
-            console.log(response);
         },
         dataType: "json"
     });
