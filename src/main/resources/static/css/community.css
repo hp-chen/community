@@ -31,8 +31,26 @@ body {
     margin-top: 15px;
 }
 
-.question-title{
+.question-title {
     margin-top: 25px;
+}
+
+.question-tag {
+    margin: 5px;
+}
+
+.question-related {
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.question-wechat {
+    padding: 0 6px;
+    float: left;
+    width: 40%;
 }
 
 .community-menu {
@@ -62,7 +80,7 @@ body {
     border-bottom: 1px solid #eeeeee;
 }
 
-.sub-comments{
+.sub-comments {
     border-radius: 5px;
     margin-top: 10px;
     border: 1px solid #eeeeee;
@@ -70,7 +88,7 @@ body {
     margin-bottom: 15px;
 }
 
-.sub-comments .btn{
+.sub-comments .btn {
     margin: 10px 0;
 }
 
@@ -87,6 +105,15 @@ body {
     margin-right: 6px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.menu .comment-icon {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu .comment-icon:hover {
+    color: #2aabd2;
 }
 
 .menu .active {
