@@ -53,8 +53,19 @@ body {
     width: 40%;
 }
 
+.publish-tag-tab{
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.publish-tag-tab .label-info{
+    white-space: normal;
+    margin: 5px;
+    display: inline-block;
+}
+
 .community-menu {
-    display: block;
     color: #999;
     font-size: 12px;
     margin-bottom: 15px;
