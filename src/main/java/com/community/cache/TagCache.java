@@ -39,8 +39,9 @@ public class TagCache {
         return tagDTOS;
     }
 
-    public static String filterInvalid(String tags) {
 
+
+    public static String filterInvalid(String tags) {
         String[] split = StringUtils.split(tags, ",");
         List<TagDTO> tagDTOS = get();
 

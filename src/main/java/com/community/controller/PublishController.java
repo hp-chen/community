@@ -2,7 +2,6 @@ package com.community.controller;
 
 import com.community.cache.TagCache;
 import com.community.dto.QuestionDTO;
-import com.community.mapper.QuestionMapper;
 import com.community.model.Question;
 import com.community.model.User;
 import com.community.service.QuestionService;
@@ -66,8 +65,8 @@ public class PublishController {
             return "publish";
         }
         String invalid = TagCache.filterInvalid(tag);
-        if (!StringUtils.isNotBlank(invalid)) {
-            model.addAttribute("error", "输入非法标签" + invalid);
+        if (StringUtils.isBlank(invalid)) {
+            model.addAttribute("error", "输入非法标签:" + invalid);
             return "publish";
         }
 
