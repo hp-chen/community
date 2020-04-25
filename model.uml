@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.community.model</OriginalElement>
+  <nodes>
+    <node x="1065.0" y="0.0">com.community.model.QuestionExample</node>
+    <node x="0.0" y="789.0">com.community.model.NotificationExample</node>
+    <node x="0.0" y="0.0">com.community.model.Question</node>
+    <node x="546.0" y="789.0">com.community.model.CommentExample</node>
+    <node x="556.0" y="0.0">com.community.model.Notification</node>
+    <node x="273.0" y="789.0">com.community.model.UserExample</node>
+    <node x="814.0" y="0.0">com.community.model.User</node>
+    <node x="278.0" y="0.0">com.community.model.Comment</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.7912780133252575" x="446.44722504498" y="388.20039804041636" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

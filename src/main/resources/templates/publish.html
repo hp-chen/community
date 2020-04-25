@@ -54,7 +54,9 @@
                 <div class="form-group">
                     <label for="tag">添加标签</label>
                     <input type="text" class="form-control" th:value="${tag}" id="tag" name="tag"
-                           placeholder="输入标签，以，号分隔" autocomplete="off" onclick="showSelectTag()">
+                           autocomplete="off"
+                           placeholder="输入标签，以，号分隔"
+                           onclick="showSelectTag()">
 
                     <div id="select-tag" class="publish-tag-tab">
                         <ul class="nav nav-tabs" role="tablist">
@@ -73,8 +75,8 @@
                                 <span>
                                     <span class="label label-info" th:each="selectTag: ${selectCategory.tags}">
                                         <span class="glyphicon glyphicon-tags" onclick="selectTag(this)"
-                                              th:data-tag="${' '+selectTag}"
-                                              th:text="${selectTag}">
+                                              th:data-tag="${selectTag}"
+                                              th:text="${' '+selectTag}">
                                         </span>
                                     </span>
                                 </span>
