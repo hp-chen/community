@@ -66,7 +66,7 @@ public class QuestionService {
             page = totalPage;
         }
         paginationDTO.setPagination(totalPage, page);
-        Integer offset = size * (page - 1);
+        Integer offset = page < 1 ? 0 : size * (page - 1);
 
         //根据分页条件查询出问题列表
         QuestionExample questionExample = new QuestionExample();
